@@ -152,7 +152,7 @@ const ChatbotTIME26FLIX = {
     }
 };
 
-document.addEventListener("DOMContentLoaded", () => ChatbotBRASFLIX.iniciar());
+document.addEventListener("DOMContentLoaded", () => ChatbotTIME26FLIX.iniciar());
 
-window.ChatbotBRASFLIX = ChatbotBRASFLIX;
-export { ChatbotBRASFLIX };
+window.ChatbotBRASFLIX = ChatbotTIME26FLIX;
+export { ChatbotTIME26FLIX };
