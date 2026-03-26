@@ -39,7 +39,7 @@ const ChatbotTIME26FLIX = {
         wrapper.className = "chatbot-widget";
         wrapper.id = "chatbot-widget";
         wrapper.innerHTML = `
-            <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Abrir chat com PedrIA" type="button">💭</button>
+            <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Abrir chat com LuzIA" type="button">💭</button>
             <div class="chatbot-window" id="chatbot-window">
                 <header class="chatbot-header">
                     <div class="chatbot-header-info">
@@ -142,7 +142,7 @@ const ChatbotTIME26FLIX = {
         this.elementos.input.value = "";
         this.adicionarMensagem("system", "Pensando...");
 
-        const resposta = await PedriaCore.responder(texto, {
+        const resposta = await LuziaCore.responder(texto, {
             pagina: paginaAtual(),
             origem: "chatbot"
         });
