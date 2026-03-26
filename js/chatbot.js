@@ -1,10 +1,10 @@
-import { PedriaCore } from "./pedria-core.js";
+import { LuziaCore } from "./luzia-core.js";
 
 const TOPICOS = [
-    { label: "Vídeos", prompt: "Quais vídeos ou conteúdos você me recomenda agora na BRASFLIX?" },
-    { label: "Perfil", prompt: "Como eu vejo e edito meu perfil na BRASFLIX?" },
-    { label: "Pessoas", prompt: "Como eu encontro pessoas e converso com outros usuários na BRASFLIX?" },
-    { label: "Analytics", prompt: "Explique o que aparece na página de analytics da BRASFLIX." },
+    { label: "Vídeos", prompt: "Quais vídeos ou conteúdos você me recomenda agora na TIME26FLIX?" },
+    { label: "Perfil", prompt: "Como eu vejo e edito meu perfil na TIME26FLIX?" },
+    { label: "Pessoas", prompt: "Como eu encontro pessoas e converso com outros usuários na TIME26FLIX?" },
+    { label: "Analytics", prompt: "Explique o que aparece na página de analytics da TIME26FLIX." },
     { label: "Hora", prompt: "Que horas são agora?" },
     { label: "Clima", prompt: "Como está o tempo agora?" }
 ];
@@ -20,7 +20,7 @@ function paginaAtual() {
     return "index";
 }
 
-const ChatbotBRASFLIX = {
+const ChatbotTIME26FLIX = {
     elementos: {},
     saudacaoInserida: false,
 
@@ -45,8 +45,8 @@ const ChatbotBRASFLIX = {
                     <div class="chatbot-header-info">
                         <div class="chatbot-avatar">😎</div>
                         <div>
-                            <div class="chatbot-title">PedrIA</div>
-                            <div class="chatbot-subtitle">Assistente do Brasflix</div>
+                            <div class="chatbot-title">LuzIA</div>
+                            <div class="chatbot-subtitle">Assistente do TIME26flix</div>
                         </div>
                     </div>
                     <button class="chatbot-close" id="chatbot-close" type="button">✕</button>
@@ -114,7 +114,7 @@ const ChatbotBRASFLIX = {
         this.saudacaoInserida = true;
         this.adicionarMensagem(
             "bot",
-            "Olá! Eu sou a PedrIA. Posso ajudar com a BRASFLIX, vídeos, perfil, pessoas, analytics, admin, data, hora e previsão do tempo.",
+            "Olá! Eu sou a LuzIA. Posso ajudar com a TIME26FLIX, vídeos, perfil, pessoas, analytics, admin, data, hora e previsão do tempo.",
             { scroll: false }
         );
     },
